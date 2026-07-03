@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Immerse yourself in our premium gallery. Browse high-resolution imagery of elite supercars, luxury touring coupes, and executive sedans.">
+    <title>Exotic Gallery | Luxury Cars Showroom</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <span class="gold-text">LUXURY</span> CARS
+            </a>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html" class="active-nav">Gallery</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+        <div class="header-cta">
+            <a href="booking.html" class="btn-gold-small">Reserve Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Page Hero Banner -->
+        <section class="page-banner gallery-banner">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <span class="banner-subtitle">VISUAL ARTISTRY</span>
+                <h1>Exotic Car Gallery</h1>
+                <p>Browse through high-definition details of the finest performance machines and elegant grand tourers in our fleet.</p>
+            </div>
+        </section>
+
+        <!-- Interactive Gallery Section -->
+        <section class="gallery-section">
+            <div class="container">
+                
+                <!-- Pure CSS Gallery Filter Controller -->
+                <div class="gallery-filter-controls">
+                    <!-- Invisible radio inputs -->
+                    <input type="radio" id="filter-all" name="gallery-tab" checked class="filter-radio">
+                    <input type="radio" id="filter-mercedes" name="gallery-tab" class="filter-radio">
+                    <input type="radio" id="filter-bmw" name="gallery-tab" class="filter-radio">
+                    <input type="radio" id="filter-audi" name="gallery-tab" class="filter-radio">
+                    <input type="radio" id="filter-ferrari" name="gallery-tab" class="filter-radio">
+                    <input type="radio" id="filter-porsche" name="gallery-tab" class="filter-radio">
+                    <input type="radio" id="filter-lamborghini" name="gallery-tab" class="filter-radio">
+                    <input type="radio" id="filter-bentley" name="gallery-tab" class="filter-radio">
+                    <input type="radio" id="filter-rolls" name="gallery-tab" class="filter-radio">
+
+                    <!-- Visible labels styled as filter buttons -->
+                    <div class="filter-btn-group">
+                        <label for="filter-all" class="filter-label">All Masterpieces</label>
+                        <label for="filter-mercedes" class="filter-label">Mercedes-Benz</label>
+                        <label for="filter-bmw" class="filter-label">BMW</label>
+                        <label for="filter-audi" class="filter-label">Audi</label>
+                        <label for="filter-ferrari" class="filter-label">Ferrari</label>
+                        <label for="filter-porsche" class="filter-label">Porsche</label>
+                        <label for="filter-lamborghini" class="filter-label">Lamborghini</label>
+                        <label for="filter-bentley" class="filter-label">Bentley</label>
+                        <label for="filter-rolls" class="filter-label">Rolls-Royce</label>
+                    </div>
+
+                    <!-- Gallery Grid container -->
+                    <div class="gallery-grid">
+                        
+                        <!-- 1. Mercedes GT -->
+                        <article class="gallery-item mercedes">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=600&q=80" alt="Black Mercedes AMG GT Coupe side profile" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>Mercedes-Benz AMG GT</h4>
+                                        <p>Handcrafted 4.0L BiTurbo V8. Track-bred styling.</p>
+                                        <span class="category-tag">Mercedes-Benz</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 2. Mercedes S-Class -->
+                        <article class="gallery-item mercedes">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=600&q=80" alt="White Mercedes-Benz S-Class sedan interior luxury dash" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>Mercedes-Benz S-Class</h4>
+                                        <p>The pinnacle of premium executive travel and comfort.</p>
+                                        <span class="category-tag">Mercedes-Benz</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 3. BMW M8 -->
+                        <article class="gallery-item bmw">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80" alt="Sleek black BMW M8 Competition Coupe parked in dynamic setting" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>BMW M8 Competition</h4>
+                                        <p>An aggressive blend of performance and touring luxury.</p>
+                                        <span class="category-tag">BMW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 4. BMW i8 -->
+                        <article class="gallery-item bmw">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&q=80" alt="Silver and blue BMW i8 hybrid supercar in street setting" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>BMW i8 Roadster</h4>
+                                        <p>Futuristic carbon fiber design with plug-in hybrid architecture.</p>
+                                        <span class="category-tag">BMW</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 5. Audi R8 -->
+                        <article class="gallery-item audi">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?auto=format&fit=crop&w=600&q=80" alt="Sleek grey Audi R8 V10 coupe front view" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>Audi R8 Coupe</h4>
+                                        <p>Naturally aspirated 5.2L V10 matching race heritage.</p>
+                                        <span class="category-tag">Audi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 6. Audi RS e-tron -->
+                        <article class="gallery-item audi">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1614026480209-cd9ec64c1470?auto=format&fit=crop&w=600&q=80" alt="Metallic grey Audi RS e-tron GT electric sedan" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>Audi RS e-tron GT</h4>
+                                        <p>Progressive luxury electric sedan with supercar acceleration.</p>
+                                        <span class="category-tag">Audi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 7. Ferrari F8 -->
+                        <article class="gallery-item ferrari">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=600&q=80" alt="Classic red Ferrari F8 Tributo parked outdoor" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>Ferrari F8 Tributo</h4>
+                                        <p>A tribute to the iconic Ferrari V8 mid-engine architecture.</p>
+                                        <span class="category-tag">Ferrari</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 8. Ferrari Roma -->
+                        <article class="gallery-item ferrari">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=600&q=80" alt="Silver Ferrari Roma sports coupe parked at twilight" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>Ferrari Roma</h4>
+                                        <p>Pure Italian design capturing the sweet life of the 50s and 60s.</p>
+                                        <span class="category-tag">Ferrari</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 9. Porsche 911 -->
+                        <article class="gallery-item porsche">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Grey Porsche 911 on road during sunset" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>Porsche 911 Turbo S</h4>
+                                        <p>The standard against which all daily supercars are judged.</p>
+                                        <span class="category-tag">Porsche</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 10. Porsche Taycan -->
+                        <article class="gallery-item porsche">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=600&q=80" alt="Blue Porsche Taycan electric sedan parked front view" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>Porsche Taycan Turbo S</h4>
+                                        <p>The soul of Porsche, electrified with 750 horsepower.</p>
+                                        <span class="category-tag">Porsche</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 11. Lamborghini Huracan -->
+                        <article class="gallery-item lamborghini">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=600&q=80" alt="Yellow Lamborghini Huracan Evo side view" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>Lamborghini Huracán Evo</h4>
+                                        <p>V10 engine screaming to 8,000 RPM. Sensory overload.</p>
+                                        <span class="category-tag">Lamborghini</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 12. Bentley Continental -->
+                        <article class="gallery-item bentley">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?auto=format&fit=crop&w=600&q=80" alt="Burgundy Bentley Continental GT luxury grand tourer" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>Bentley Continental GT</h4>
+                                        <p>Unmatched grand touring refinement with standard W12 power.</p>
+                                        <span class="category-tag">Bentley</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 13. Rolls-Royce Ghost -->
+                        <article class="gallery-item rolls">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1632245889027-e406faaa19ca?auto=format&fit=crop&w=600&q=80" alt="Rolls Royce Ghost premium sedan in studio lighting" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>Rolls-Royce Ghost</h4>
+                                        <p>Serene luxury, handcrafted wood, leather, and V12 power.</p>
+                                        <span class="category-tag">Rolls-Royce</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 14. Rolls-Royce Cullinan -->
+                        <article class="gallery-item rolls">
+                            <div class="gallery-img-wrapper">
+                                <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80" alt="White Rolls-Royce Cullinan SUV front three-quarters" class="gallery-img">
+                                <div class="gallery-caption-overlay">
+                                    <div class="caption-content">
+                                        <h4>Rolls-Royce Cullinan</h4>
+                                        <p>Effortless all-terrain luxury. The absolute king of SUVs.</p>
+                                        <span class="category-tag">Rolls-Royce</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-block footer-about">
+                <h3><span class="gold-text">LUXURY</span> CARS</h3>
+                <p>The leading name in bespoke exotic and luxury vehicles. We provide state-of-the-art automobiles and unparalleled customer acquisition experiences.</p>
+                <p class="copyright">&copy; 2026 Luxury Cars Dealership. All Rights Reserved.</p>
+            </div>
+            <div class="footer-block footer-links">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Heritage</a></li>
+                    <li><a href="gallery.html">Exotic Gallery</a></li>
+                    <li><a href="inventory.html">Current Inventory</a></li>
+                    <li><a href="pricing.html">Spec & Pricing Guide</a></li>
+                    <li><a href="booking.html">Schedule Booking</a></li>
+                    <li><a href="help.html">Help & FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-block footer-contact">
+                <h4>Showroom Office</h4>
+                <p><strong>Address:</strong> <a href="help.html#map-section" class="footer-map-link">742 Park Avenue, Midtown Manhattan, NY 10021</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+12125557700">+1 (212) 555-7700</a></p>
+                <p><strong>Email:</strong> <a href="mailto:concierge@luxurycars.com">concierge@luxurycars.com</a></p>
+                <p><strong>Hours:</strong> Mon - Sat: 9:00 AM - 7:00 PM | Sun: Closed</p>
+            </div>
+            <div class="footer-block footer-social">
+                <h4>Connect With Us</h4>
+                <p>Follow us on premium social networks to watch behind-the-scenes car deliveries and track racing events.</p>
+                <ul class="social-links">
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener">X (Twitter)</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

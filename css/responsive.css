@@ -1,0 +1,328 @@
+/* 
+====================================================
+LUXURY CARS - RESPONSIVE STYLESHEET (MEDIA QUERIES)
+====================================================
+Breakpoints:
+- Laptop View (max-width: 1024px)
+- Tablet View (max-width: 768px)
+- Mobile View (max-width: 576px)
+====================================================
+*/
+
+/* 1. LAPTOP BREAKPOINT (max-width: 1024px) */
+@media (max-width: 1024px) {
+    /* Base spacing adjustments */
+    .container {
+        padding: 0 30px;
+    }
+    
+    /* Hero section */
+    .hero-content h1 {
+        font-size: 3.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.15rem;
+    }
+
+    /* Grids to 2 or 3 columns */
+    .featured-grid,
+    .inventory-grid,
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .process-ol {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .mvg-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .guides-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Business Intro */
+    .intro-grid, .about-grid {
+        gap: 40px;
+    }
+    
+    /* Newsletter */
+    .newsletter-box {
+        padding: 40px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .newsletter-text {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .newsletter-form {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+/* 2. TABLET BREAKPOINT (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Section heights and padding */
+    .main-header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        gap: 15px;
+        position: relative; /* Remove sticky on small screen to conserve space if needed, or keep it */
+    }
+
+    .nav-bar > ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 20px;
+    }
+
+    .header-cta {
+        display: none; /* Hide top CTA button to save space */
+    }
+    
+    .page-banner {
+        height: 280px;
+    }
+
+    /* Hero section font resizing */
+    .hero-content h1 {
+        font-size: 2.6rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    /* Grids scaling down */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .arrivals-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid, .office-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .why-image, .office-details {
+        order: -1; /* Place image on top on tablet */
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .multimedia-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Form Layout */
+    .fieldset-grid {
+        grid-template-columns: 1fr;
+        gap: 20px 0;
+    }
+    
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .textarea-group {
+        grid-column: span 1;
+    }
+    
+    .form-fieldset {
+        padding: 25px;
+    }
+
+    /* Table Responsiveness wrapper trigger */
+    .luxury-table caption {
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
+
+/* 3. MOBILE BREAKPOINT (max-width: 576px) */
+@media (max-width: 576px) {
+    /* Section paddings */
+    .business-intro,
+    .featured-cars,
+    .latest-arrivals,
+    .why-choose-us,
+    .process-section,
+    .testimonials,
+    .cta-section,
+    .newsletter-section,
+    .about-intro-section,
+    .mission-vision-goals,
+    .core-values,
+    .team-section,
+    .office-info-section,
+    .gallery-section,
+    .inventory-section,
+    .pricing-table-section,
+    .booking-section,
+    .guides-section,
+    .faq-section,
+    .multimedia-section,
+    .support-section {
+        padding: 60px 0;
+    }
+
+    /* Typography */
+    .section-header h2,
+    .intro-text h2,
+    .why-text h2,
+    .cta-content h2,
+    .about-story-text h2,
+    .office-details h2,
+    .booking-intro-text h2,
+    .support-box h2 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .banner-content h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Stacking grids completely to 1 column */
+    .featured-grid,
+    .inventory-grid,
+    .gallery-grid,
+    .process-ol,
+    .mvg-grid,
+    .values-grid,
+    .guides-grid,
+    .brands-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .brand-item {
+        padding: 15px 0;
+        font-size: 0.95rem;
+    }
+
+    /* Hero Buttons */
+    .hero-buttons, .cta-buttons, .form-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .hero-buttons a, .cta-buttons a, .form-actions button {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Experience Badge Adjustment */
+    .experience-badge {
+        bottom: -20px;
+        left: 20px;
+        padding: 15px 25px;
+    }
+    
+    .experience-badge .years {
+        font-size: 2rem;
+    }
+
+    /* Team Card Adjustment */
+    .team-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    /* Working Hours Table padding */
+    .working-hours-card {
+        padding: 30px 20px;
+    }
+    
+    .hours-table td {
+        font-size: 0.85rem;
+    }
+
+    /* Newsletter Form Stacking */
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input[type="email"] {
+        width: 100%;
+    }
+
+    /* Help & Support Contacts */
+    .support-contacts {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .support-card {
+        width: 100%;
+    }
+    
+    .faq-question {
+        padding: 20px;
+        font-size: 1rem;
+    }
+    
+    .faq-answer {
+        padding: 0 20px 20px;
+    }
+
+    /* Aside Notice Box mobile styling */
+    .aside-notice-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+}

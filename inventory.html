@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our premium showroom inventory. Compare luxury specifications, engine power, and pricing for Ferrari, Porsche, Lamborghini, and Mercedes-Benz.">
+    <title>Luxury Inventory | High-Performance Fleet</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <span class="gold-text">LUXURY</span> CARS
+            </a>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="inventory.html" class="active-nav">Inventory</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+        <div class="header-cta">
+            <a href="booking.html" class="btn-gold-small">Reserve Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Page Hero Banner -->
+        <section class="page-banner inventory-banner">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <span class="banner-subtitle">THE SHOWROOM</span>
+                <h1>Current Luxury Inventory</h1>
+                <p>Browse our current selection of pristine luxury, exotic, and electric masterpieces ready for immediate acquisition.</p>
+            </div>
+        </section>
+
+        <!-- Inventory Grid Section -->
+        <section class="inventory-section">
+            <div class="container">
+                
+                <!-- Section Header -->
+                <div class="section-header">
+                    <span class="section-badge">SELECT VEHICLES</span>
+                    <h2>Exotic Showroom Showcase</h2>
+                    <p>Each vehicle has been detailed to perfection and undergoes our exhaustive 150-point quality certification.</p>
+                </div>
+
+                <!-- CSS Grid of Car Cards -->
+                <div class="inventory-grid">
+                    
+                    <!-- Card 1: Porsche 911 GT3 -->
+                    <article class="inventory-card">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Slate grey Porsche 911 GT3" class="inventory-card-img">
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-brand-model">
+                                <span class="card-brand">Porsche</span>
+                                <h3 class="card-model">911 GT3</h3>
+                            </div>
+                            <div class="card-price-tag">$198,500</div>
+                            <hr class="card-hr">
+                            
+                            <!-- Detailed Specifications -->
+                            <ul class="specs-list">
+                                <li><strong>Year:</strong> <span>2026</span></li>
+                                <li><strong>Engine:</strong> <span>4.0L Naturally Aspirated Flat-6</span></li>
+                                <li><strong>Horsepower:</strong> <span>502 HP</span></li>
+                                <li><strong>Fuel Type:</strong> <span>Premium Petrol</span></li>
+                                <li><strong>Transmission:</strong> <span>7-Speed PDK Dual-Clutch</span></li>
+                                <li><strong>Mileage:</strong> <span>120 miles</span></li>
+                            </ul>
+                            
+                            <div class="card-action">
+                                <a href="booking.html?car=porsche-911" class="btn-inventory-reserve">Reserve Vehicle</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Ferrari F8 Tributo -->
+                    <article class="inventory-card">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=600&q=80" alt="Corsa Red Ferrari F8 Tributo" class="inventory-card-img">
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-brand-model">
+                                <span class="card-brand">Ferrari</span>
+                                <h3 class="card-model">F8 Tributo</h3>
+                            </div>
+                            <div class="card-price-tag">$312,000</div>
+                            <hr class="card-hr">
+                            
+                            <ul class="specs-list">
+                                <li><strong>Year:</strong> <span>2025</span></li>
+                                <li><strong>Engine:</strong> <span>3.9L Twin-Turbo V8</span></li>
+                                <li><strong>Horsepower:</strong> <span>710 HP</span></li>
+                                <li><strong>Fuel Type:</strong> <span>Premium Petrol</span></li>
+                                <li><strong>Transmission:</strong> <span>7-Speed F1 Dual-Clutch</span></li>
+                                <li><strong>Mileage:</strong> <span>450 miles</span></li>
+                            </ul>
+                            
+                            <div class="card-action">
+                                <a href="booking.html?car=ferrari-f8" class="btn-inventory-reserve">Reserve Vehicle</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Rolls-Royce Ghost -->
+                    <article class="inventory-card">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1632245889027-e406faaa19ca?auto=format&fit=crop&w=600&q=80" alt="Sleek black Rolls-Royce Ghost sedan" class="inventory-card-img">
+                            <span class="status-badge status-reserved">Reserved</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-brand-model">
+                                <span class="card-brand">Rolls-Royce</span>
+                                <h3 class="card-model">Ghost</h3>
+                            </div>
+                            <div class="card-price-tag">$346,000</div>
+                            <hr class="card-hr">
+                            
+                            <ul class="specs-list">
+                                <li><strong>Year:</strong> <span>2026</span></li>
+                                <li><strong>Engine:</strong> <span>6.75L Twin-Turbo V12</span></li>
+                                <li><strong>Horsepower:</strong> <span>563 HP</span></li>
+                                <li><strong>Fuel Type:</strong> <span>Premium Petrol</span></li>
+                                <li><strong>Transmission:</strong> <span>8-Speed Satellite-Aided Auto</span></li>
+                                <li><strong>Mileage:</strong> <span>50 miles</span></li>
+                            </ul>
+                            
+                            <div class="card-action">
+                                <a href="booking.html?car=rr-ghost" class="btn-inventory-reserve btn-disabled">Pending Sale</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Lamborghini Huracán Evo -->
+                    <article class="inventory-card">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=600&q=80" alt="Yellow Lamborghini Huracan Evo supercar" class="inventory-card-img">
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-brand-model">
+                                <span class="card-brand">Lamborghini</span>
+                                <h3 class="card-model">Huracán Evo</h3>
+                            </div>
+                            <div class="card-price-tag">$261,200</div>
+                            <hr class="card-hr">
+                            
+                            <ul class="specs-list">
+                                <li><strong>Year:</strong> <span>2025</span></li>
+                                <li><strong>Engine:</strong> <span>5.2L Naturally Aspirated V10</span></li>
+                                <li><strong>Horsepower:</strong> <span>631 HP</span></li>
+                                <li><strong>Fuel Type:</strong> <span>Premium Petrol</span></li>
+                                <li><strong>Transmission:</strong> <span>7-Speed LDF Dual-Clutch</span></li>
+                                <li><strong>Mileage:</strong> <span>150 miles</span></li>
+                            </ul>
+                            
+                            <div class="card-action">
+                                <a href="booking.html?car=lambo-huracan" class="btn-inventory-reserve">Reserve Vehicle</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5: Audi RS e-tron GT -->
+                    <article class="inventory-card">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1614026480209-cd9ec64c1470?auto=format&fit=crop&w=600&q=80" alt="Audi RS e-tron GT electric sedan" class="inventory-card-img">
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-brand-model">
+                                <span class="card-brand">Audi</span>
+                                <h3 class="card-model">RS e-tron GT</h3>
+                            </div>
+                            <div class="card-price-tag">$142,400</div>
+                            <hr class="card-hr">
+                            
+                            <ul class="specs-list">
+                                <li><strong>Year:</strong> <span>2026</span></li>
+                                <li><strong>Engine:</strong> <span>Dual Synchronous Electric Motors</span></li>
+                                <li><strong>Horsepower:</strong> <span>637 HP</span></li>
+                                <li><strong>Fuel Type:</strong> <span>100% Electric</span></li>
+                                <li><strong>Transmission:</strong> <span>2-Speed Automatic Rear Axle</span></li>
+                                <li><strong>Mileage:</strong> <span>10 miles</span></li>
+                            </ul>
+                            
+                            <div class="card-action">
+                                <a href="booking.html?car=audi-etron" class="btn-inventory-reserve">Reserve Vehicle</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6: Bentley Continental GT -->
+                    <article class="inventory-card">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?auto=format&fit=crop&w=600&q=80" alt="Burgundy Bentley Continental GT Coupe" class="inventory-card-img">
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-brand-model">
+                                <span class="card-brand">Bentley</span>
+                                <h3 class="card-model">Continental GT</h3>
+                            </div>
+                            <div class="card-price-tag">$235,900</div>
+                            <hr class="card-hr">
+                            
+                            <ul class="specs-list">
+                                <li><strong>Year:</strong> <span>2025</span></li>
+                                <li><strong>Engine:</strong> <span>4.0L Twin-Turbocharged V8</span></li>
+                                <li><strong>Horsepower:</strong> <span>542 HP</span></li>
+                                <li><strong>Fuel Type:</strong> <span>Premium Petrol</span></li>
+                                <li><strong>Transmission:</strong> <span>8-Speed Dual-Clutch Automatic</span></li>
+                                <li><strong>Mileage:</strong> <span>800 miles</span></li>
+                            </ul>
+                            
+                            <div class="card-action">
+                                <a href="booking.html?car=bentley-gt" class="btn-inventory-reserve">Reserve Vehicle</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 7: Range Rover Autobiography -->
+                    <article class="inventory-card">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=600&q=80" alt="Range Rover Autobiography luxury SUV" class="inventory-card-img">
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-brand-model">
+                                <span class="card-brand">Range Rover</span>
+                                <h3 class="card-model">Autobiography</h3>
+                            </div>
+                            <div class="card-price-tag">$162,000</div>
+                            <hr class="card-hr">
+                            
+                            <ul class="specs-list">
+                                <li><strong>Year:</strong> <span>2026</span></li>
+                                <li><strong>Engine:</strong> <span>4.4L Twin-Turbo V8 Mild Hybrid</span></li>
+                                <li><strong>Horsepower:</strong> <span>523 HP</span></li>
+                                <li><strong>Fuel Type:</strong> <span>Petrol MHEV</span></li>
+                                <li><strong>Transmission:</strong> <span>8-Speed Automatic</span></li>
+                                <li><strong>Mileage:</strong> <span>15 miles</span></li>
+                            </ul>
+                            
+                            <div class="card-action">
+                                <a href="booking.html?car=range-rover" class="btn-inventory-reserve">Reserve Vehicle</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 8: Mercedes-Benz S-Class -->
+                    <article class="inventory-card">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=600&q=80" alt="Mercedes S-Class luxury interior dash" class="inventory-card-img">
+                            <span class="status-badge status-available">Available</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-brand-model">
+                                <span class="card-brand">Mercedes-Benz</span>
+                                <h3 class="card-model">S-Class S580</h3>
+                            </div>
+                            <div class="card-price-tag">$124,500</div>
+                            <hr class="card-hr">
+                            
+                            <ul class="specs-list">
+                                <li><strong>Year:</strong> <span>2026</span></li>
+                                <li><strong>Engine:</strong> <span>4.0L V8 Biturbo with Mild Hybrid</span></li>
+                                <li><strong>Horsepower:</strong> <span>496 HP</span></li>
+                                <li><strong>Fuel Type:</strong> <span>Petrol MHEV</span></li>
+                                <li><strong>Transmission:</strong> <span>9G-TRONIC 9-Speed Automatic</span></li>
+                                <li><strong>Mileage:</strong> <span>45 miles</span></li>
+                            </ul>
+                            
+                            <div class="card-action">
+                                <a href="booking.html?car=mercedes-s580" class="btn-inventory-reserve">Reserve Vehicle</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-block footer-about">
+                <h3><span class="gold-text">LUXURY</span> CARS</h3>
+                <p>The leading name in bespoke exotic and luxury vehicles. We provide state-of-the-art automobiles and unparalleled customer acquisition experiences.</p>
+                <p class="copyright">&copy; 2026 Luxury Cars Dealership. All Rights Reserved.</p>
+            </div>
+            <div class="footer-block footer-links">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Heritage</a></li>
+                    <li><a href="gallery.html">Exotic Gallery</a></li>
+                    <li><a href="inventory.html">Current Inventory</a></li>
+                    <li><a href="pricing.html">Spec & Pricing Guide</a></li>
+                    <li><a href="booking.html">Schedule Booking</a></li>
+                    <li><a href="help.html">Help & FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-block footer-contact">
+                <h4>Showroom Office</h4>
+                <p><strong>Address:</strong> <a href="help.html#map-section" class="footer-map-link">742 Park Avenue, Midtown Manhattan, NY 10021</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+12125557700">+1 (212) 555-7700</a></p>
+                <p><strong>Email:</strong> <a href="mailto:concierge@luxurycars.com">concierge@luxurycars.com</a></p>
+                <p><strong>Hours:</strong> Mon - Sat: 9:00 AM - 7:00 PM | Sun: Closed</p>
+            </div>
+            <div class="footer-block footer-social">
+                <h4>Connect With Us</h4>
+                <p>Follow us on premium social networks to watch behind-the-scenes car deliveries and track racing events.</p>
+                <ul class="social-links">
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener">X (Twitter)</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

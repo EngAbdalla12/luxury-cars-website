@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Schedule a showroom consultation or reserve your chosen vehicle. Fill out our secure, bespoke concierge reservation form.">
+    <title>Reserve Your Vehicle | Luxury Cars Concierge</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+                <span class="gold-text">LUXURY</span> CARS
+            </a>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="booking.html" class="active-nav">Booking</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+        <div class="header-cta">
+            <a href="booking.html" class="btn-gold-small">Reserve Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Page Hero Banner -->
+        <section class="page-banner booking-banner">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <span class="banner-subtitle">BESPOKE CONCIERGE</span>
+                <h1>Vehicle Reservation</h1>
+                <p>Begin your custom acquisition process by filling out the secure booking credentials form below.</p>
+            </div>
+        </section>
+
+        <!-- Booking Form Section -->
+        <section class="booking-section">
+            <div class="container">
+                
+                <div class="booking-intro-text">
+                    <h2>Showroom Consultation & Booking Proposal</h2>
+                    <p>Please supply your details below. Once submitted, a luxury automotive concierge will reach out to you within two hours to finalize your appointment, arrange test drives, and coordinate payment structures.</p>
+                </div>
+
+                <!-- Reservation Form -->
+                <form class="reservation-form" action="#" method="POST">
+                    
+                    <!-- Fieldset 1: Personal Details -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">Client Credentials & Access</legend>
+                        <div class="fieldset-grid">
+                            <div class="form-group">
+                                <label for="client-name">Full Legal Name <span class="required-star">*</span></label>
+                                <input type="text" id="client-name" name="name" placeholder="Johnathan Sterling" minlength="3" required>
+                                <span class="input-tip">Minimum 3 characters required.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="client-email">Email Address <span class="required-star">*</span></label>
+                                <input type="email" id="client-email" name="email" placeholder="client@luxuryestate.com" required>
+                                <span class="input-tip">Must be a valid email format.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="client-phone">Phone Number <span class="required-star">*</span></label>
+                                <input type="tel" id="client-phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                <span class="input-tip">Format: 123-456-7890</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="client-password">Secure Account Password <span class="required-star">*</span></label>
+                                <input type="password" id="client-password" name="password" placeholder="Create Showroom Password" minlength="8" required>
+                                <span class="input-tip">Minimum 8 characters (to track booking progress).</span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Fieldset 2: Vehicle Specs and Appointment -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">Vehicle Selection & Visit Details</legend>
+                        <div class="fieldset-grid">
+                            <div class="form-group">
+                                <label for="vehicle-select">Select Showroom Vehicle <span class="required-star">*</span></label>
+                                <select id="vehicle-select" name="vehicle" required>
+                                    <option value="" disabled selected>-- Choose a Masterpiece --</option>
+                                    <option value="porsche-911">Porsche 911 GT3 ($198,500)</option>
+                                    <option value="porsche-taycan">Porsche Taycan Turbo S ($187,000)</option>
+                                    <option value="ferrari-f8">Ferrari F8 Tributo ($312,000)</option>
+                                    <option value="ferrari-roma">Ferrari Roma Coupe ($222,600)</option>
+                                    <option value="lambo-huracan">Lamborghini Huracán Evo V10 ($261,200)</option>
+                                    <option value="rr-ghost">Rolls-Royce Ghost Sedan ($346,000)</option>
+                                    <option value="rr-cullinan">Rolls-Royce Cullinan SUV ($395,000)</option>
+                                    <option value="bentley-continental">Bentley Continental GT ($235,900)</option>
+                                    <option value="mercedes-sclass">Mercedes-Benz S-Class S580 ($124,500)</option>
+                                    <option value="audi-rs">Audi RS e-tron GT ($142,400)</option>
+                                    <option value="range-rover">Range Rover Autobiography ($162,000)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="booking-date">Appointment Date <span class="required-star">*</span></label>
+                                <input type="date" id="booking-date" name="booking_date" required>
+                                <span class="input-tip">Showroom closed on Sundays.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="consult-duration">Test Drive / Consultation Hours <span class="required-star">*</span></label>
+                                <input type="number" id="consult-duration" name="duration" min="1" max="8" placeholder="Duration (1-8 hours)" required>
+                                <span class="input-tip">Consultations can be booked for 1 to 8 hours.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <span class="label-heading">Acquisition Preference <span class="required-star">*</span></span>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="acquisition_type" value="purchase" checked required>
+                                        <span>Showroom Purchase</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="acquisition_type" value="lease">
+                                        <span>Bespoke Leasing</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="acquisition_type" value="rent">
+                                        <span>Exotic Fleet Rental</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Fieldset 3: Custom Concierge & Delivery Options -->
+                    <fieldset class="form-fieldset">
+                        <legend class="form-legend">Concierge Upgrades & Instructions</legend>
+                        
+                        <div class="checkbox-container">
+                            <span class="label-heading">Additional Showroom Services</span>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services[]" value="enclosed_transport">
+                                    <span>Enclosed Transport Delivery (Weather-controlled)</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services[]" value="vip_insurance">
+                                    <span>VIP Multi-Year Extended Asset Insurance</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services[]" value="orientation">
+                                    <span>Showroom Unveiling Ceremony & Orientation</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="services[]" value="materials_consult">
+                                    <span>Bespoke Paint and Leather Trim Consultation</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group textarea-group">
+                            <label for="special-requirements">Special Requirements & Bespoke Specifications</label>
+                            <textarea id="special-requirements" name="requirements" placeholder="Please list any specific paint codes, custom stitching, performance exhausts, or special security parameters you require..." rows="6"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <!-- Submit & Reset Buttons -->
+                    <div class="form-actions">
+                        <button type="reset" class="btn-outline-reset">Reset Proposal</button>
+                        <button type="submit" class="btn-gold-submit">Submit Reservation Proposal</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-block footer-about">
+                <h3><span class="gold-text">LUXURY</span> CARS</h3>
+                <p>The leading name in bespoke exotic and luxury vehicles. We provide state-of-the-art automobiles and unparalleled customer acquisition experiences.</p>
+                <p class="copyright">&copy; 2026 Luxury Cars Dealership. All Rights Reserved.</p>
+            </div>
+            <div class="footer-block footer-links">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Heritage</a></li>
+                    <li><a href="gallery.html">Exotic Gallery</a></li>
+                    <li><a href="inventory.html">Current Inventory</a></li>
+                    <li><a href="pricing.html">Spec & Pricing Guide</a></li>
+                    <li><a href="booking.html">Schedule Booking</a></li>
+                    <li><a href="help.html">Help & FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-block footer-contact">
+                <h4>Showroom Office</h4>
+                <p><strong>Address:</strong> <a href="help.html#map-section" class="footer-map-link">742 Park Avenue, Midtown Manhattan, NY 10021</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+12125557700">+1 (212) 555-7700</a></p>
+                <p><strong>Email:</strong> <a href="mailto:concierge@luxurycars.com">concierge@luxurycars.com</a></p>
+                <p><strong>Hours:</strong> Mon - Sat: 9:00 AM - 7:00 PM | Sun: Closed</p>
+            </div>
+            <div class="footer-block footer-social">
+                <h4>Connect With Us</h4>
+                <p>Follow us on premium social networks to watch behind-the-scenes car deliveries and track racing events.</p>
+                <ul class="social-links">
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener">X (Twitter)</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
